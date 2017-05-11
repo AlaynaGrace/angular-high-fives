@@ -10,6 +10,7 @@
     <script src="/scripts/getHighFives-service.js" charset="utf-8"></script>
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
   </head>
   <body ng-app="myApp">
     <div class="jumbotron"><h1>High Fives!</h1></div>
@@ -19,8 +20,8 @@
       <p>Click the button below to give him a high five!</p>
       <button type="button" class="btn" ng-click="hf.highFiveMe()">High Five!</button>
       <h2>Successful high fives</h2>
-      <p>{{hf.response}}</p>
-      <p>{{hf.successful}}</p>
+      <h3>{{hf.response}}</h3>
+      <h3>{{hf.successful}}</h3>
     </div>
 
   </body>
