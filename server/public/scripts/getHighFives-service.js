@@ -7,6 +7,10 @@ myApp.service('GetHighFives', function(){
     return skillLevel;
   };
 
+  this.setSkillLevel = function(max, min){
+    skillLevel = this.randomNumber(max,min);
+  };
+
   this.getSuccessful = function(){
     return successfulHighFives;
   };
