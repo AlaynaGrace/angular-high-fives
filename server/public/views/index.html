@@ -11,18 +11,20 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+    <!-- <script src="views/template.html" charset="utf-8"></script> -->
   </head>
   <body ng-app="myApp">
     <div class="jumbotron"><h1>High Fives!</h1></div>
     <div ng-controller="HighFives as hf">
-      <img src="http://images1.fanpop.com/images/photos/2500000/hi-5-high-five-2524598-1600-1200.jpg" alt="">
-      <p>This is Barry, the high fiving bear! He loves to give high fives!</p>
-      <p>Barry's high five skill level: {{hf.skillLevel}}</p>
-      <p>Click the button below to give him a high five!</p>
-      <button type="button" class="btn" ng-click="hf.highFiveMe()"><img src="https://www.spreadshirt.com/image-server/v1/designs/12910541,width=178,height=178/high-five-hand-sign-high-5-hand-gesture-sign-langu.png" alt=""></button>
-      <!-- <h2>Successful high fives</h2> -->
-      <!-- <h3>{{hf.response}}</h3> -->
-      <h3>You've made {{hf.successful}} out of {{hf.total}} high fives</h3>
+      <a href="#!/barry">Barry</a>
+      <a href="#!/lauren">Lauren</a>
+      <a href="#!/olly">Olly</a>
+      <div class="info-container">
+        <div class="info-view" ng-view>
+
+        </div>
+      </div>
+
     </div>
 
   </body>
