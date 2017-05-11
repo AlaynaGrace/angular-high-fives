@@ -1,11 +1,12 @@
 var myApp = angular.module('myApp',['ngRoute']);
  myApp.controller('HighFives', function(GetHighFives){
+   //this controller is no longer used
    var vm = this;
 
   //  vm.skillLevel = GetHighFives.getSkillLevel();
    vm.successful = GetHighFives.getSuccessful();
    vm.total = GetHighFives.getTotal();
-   vm.highFiveMe = function(max,min){
+   vm.highFiveMe = function(){
      vm.quality = GetHighFives.randomNumber(1,10);
      GetHighFives.highFives(vm.skillLevel, vm.quality);
      vm.successful = GetHighFives.getSuccessful();

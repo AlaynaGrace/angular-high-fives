@@ -1,5 +1,5 @@
 myApp.service('GetHighFives', function(){
-  var skillLevel = Math.floor(Math.random() * 10 )+ 1;
+  var skillLevel = 0;
   var successfulHighFives = 0;
   var total = 0;
 
