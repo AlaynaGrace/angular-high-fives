@@ -23,7 +23,7 @@ myApp.config(function($routeProvider){
    "<button class='btn' ng-click='highFiveMe()'><img src='https://www.spreadshirt.com/image-server/v1/designs/12910541,width=178,height=178/high-five-hand-sign-high-5-hand-gesture-sign-langu.png'></button>" +
    "<h3>You've made {{successful}} out of {{total}} high fives</h3>";
 
-  var mainTemplate = "<h2> Welcome! </h2> <p>Pick an animal to give them a high five!</p>";
+  var mainTemplate = "<h2> Welcome! </h2>";
 
    $routeProvider.when('/',{
      template: mainTemplate,
