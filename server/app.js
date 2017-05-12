@@ -15,7 +15,7 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, './public/views/index.html'));
 });
 
-var port = 3000 || process.env.PORT;
+var port = process.env.PORT || 3000;
 
 app.listen(port, function() {
   console.log("server running, check", port);
