@@ -6,38 +6,32 @@ var myApp = angular.module('myApp',['ngRoute']);
   //  vm.skillLevel = GetHighFives.getSkillLevel();
    vm.successful = GetHighFives.getSuccessful();
    vm.total = GetHighFives.getTotal();
-   vm.highFiveMe = function(){
-     vm.quality = GetHighFives.randomNumber(1,10);
-     GetHighFives.highFives(vm.skillLevel, vm.quality);
-     vm.successful = GetHighFives.getSuccessful();
-     vm.total = GetHighFives.getTotal();
-   };
+  //  vm.highFiveMe = function(){
+  //    vm.quality = GetHighFives.randomNumber(1,10);
+  //    GetHighFives.highFives(vm.skillLevel, vm.quality);
+  //    vm.successful = GetHighFives.getSuccessful();
+  //    vm.total = GetHighFives.getTotal();
+  //  };
  });
 
 
-myApp.config(function($routeProvider){
-  var templateToUse = "<img ng-src='{{highFiveBuddy.imageLink}}'>"+
-   "<p>{{highFiveBuddy.description}}</p>"+
-   "<p>{{highFiveBuddy.name}}'s high five skill level: {{skillLevel}}</p>" +
-   "<p>Click the button below to {{highFiveBuddy.name}} high five!</p>" +
-   "<button class='btn' ng-click='highFiveMe()'><img src='https://www.spreadshirt.com/image-server/v1/designs/12910541,width=178,height=178/high-five-hand-sign-high-5-hand-gesture-sign-langu.png'></button>" +
-   "<h3>You've made {{successful}} out of {{total}} high fives</h3>";
-
-  var mainTemplate = "<h2> Welcome! </h2>";
+myApp.config(function($routeProvider, $locationProvider){
 
    $routeProvider.when('/',{
-     template: mainTemplate,
+     templateUrl: 'views/pages/mainTemplate.html',
      controller: 'HighFives'
    }).when('/barry',{
-     template: templateToUse,
+     templateUrl: 'views/pages/template.html',
      controller: 'Barry'
    }).when('/lauren',{
-     template: templateToUse,
+     templateUrl: 'views/pages/template.html',
      controller: 'Lauren'
    }).when('/olly',{
-     template: templateToUse,
+     templateUrl: 'views/pages/template.html',
      controller: 'Olly'
-   });
+   }).otherwise('/');
+
+  //  $locationProvider.html5mode(true);
  });
 
  myApp.controller('Barry', function($scope, $route, GetHighFives){
