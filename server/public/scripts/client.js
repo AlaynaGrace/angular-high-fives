@@ -31,7 +31,7 @@ myApp.config(function($routeProvider, $locationProvider){
      controller: 'Olly'
    }).otherwise('/');
 
-  //  $locationProvider.html5mode(true);
+   $locationProvider.html5Mode(true);
  });
 
  myApp.controller('Barry', function($scope, $route, GetHighFives){
