@@ -11,7 +11,7 @@ app.get('/info', function(req, res) {
     res.send("hello from the server");
 });
 
-app.use('/', function(req, res) {
+app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, './public/views/index.html'));
 });
 
