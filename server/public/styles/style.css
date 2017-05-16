@@ -90,6 +90,8 @@ see it immdiately*/
 of leaving or entering (like it is about to leave or enter)
 Now everything in the div is 100% visibile (opacity is at 1) and it is
 100px from the top of the parent div
+
+when the animation is viewed, the div visibily moves downward before launching upwards and disappearing
 */
 
 .animal-view.ng-leave,
