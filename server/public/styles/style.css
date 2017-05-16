@@ -33,12 +33,19 @@ body{
 a{
   margin-left: 5px;
   margin-bottom: 5px;
-  border: 5px;
+  border: 5px solid #0d2c40;
   border-radius: 4px;
   background-color: #0d2c40;
   color: honeydew;
+  text-decoration: none;
+
 }
-div{
+a:hover,a:focus,a:active{
+  color: grey;
+  text-decoration: none;
+}
+
+.animal-view{
   margin: 10px;
 }
 
