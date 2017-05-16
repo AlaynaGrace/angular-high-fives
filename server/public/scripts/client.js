@@ -91,6 +91,7 @@ myApp.config(function($routeProvider, $locationProvider){
    };
  });
 
+//added a controller to the main so that we can reset the counts from the home page
 myApp.controller('MainCtrl',function(GetHighFives){
   var vm = this;
 

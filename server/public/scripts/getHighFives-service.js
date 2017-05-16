@@ -20,6 +20,7 @@ myApp.service('GetHighFives', function(){
     return successfulHighFives;
   };
 
+//this function resets all of the counts so people can start over
   this.resetAll = function(){
     total = 0;
     successfulHighFives = 0;
