@@ -20,6 +20,11 @@ myApp.service('GetHighFives', function(){
     return successfulHighFives;
   };
 
+  this.resetAll = function(){
+    total = 0;
+    successfulHighFives = 0;
+  };
+
   //this returns the total number of high fives attempted
   this.getTotal = function(){
     return total;

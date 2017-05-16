@@ -7,7 +7,7 @@ myApp.config(function($routeProvider, $locationProvider){
 
    $routeProvider.when('/',{
      templateUrl: 'views/pages/mainTemplate.html',
-     //doesn't need a controller because I'm not controlling anything
+     controller: 'MainCtrl as mc'
    }).when('/barry',{
      templateUrl: 'views/pages/template.html',
      controller: 'BarryCtrl as bc'
@@ -90,3 +90,9 @@ myApp.config(function($routeProvider, $locationProvider){
      vm.total = GetHighFives.getTotal();
    };
  });
+
+myApp.controller('MainCtrl',function(GetHighFives){
+  var vm = this;
+
+  vm.reset = GetHighFives.resetAll;
+});
