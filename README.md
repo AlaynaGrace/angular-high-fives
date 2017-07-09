@@ -1,47 +1,52 @@
-# Fictional Character High Five-Off
+# Angular High Fives
 
-In this assignment, you'll be making a making an app to high-five fictional characters. However, each fictional character's skill with high-fiving will be randomly generated. And each high five may or may not work!
+Angular High Fives is an application that gives you the option of three animals of which to give high fives. Each animal has a different randomized difficulty. The higher the difficulty, the harder it is to land a high five. The total number of high fives landed between all three animals is listed on each animal's page.
 
+## Getting Started
 
-## Setup
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Run `npm install` to get Express. Angular and Bootstrap are included.
+### Prerequisites
 
-## In the View:
-Display a character image, their name, and something about them (ya know, it's good to have an introduction before high-fiving strangers).
-Note: Feel free to use Google to find content or make up your own! Include some images and give it your best styling effort.
+You will need to have Node.js installed.
 
-Have a button for the user to click to give the character a high five. When clicked, generate a random number between 1 and 10 to compare against the character's high-five skill.
+### Installing
 
-Display a statement about many high fives the character has successfully completed.
+1. Fork and clone this repo.
+2. cd into the file in your terminal.
 
-## High Five Logistics
-Randomly generate a high-five skill for your character between 1 and 10. Note: this will mean the character's skill will be different each time the app is run.
+```
+$ cd Desktop/angular-high-fives
+```
 
-One character that is unpredictable with high-fives: randomly generate their skill level between 1 and 10.
+3. npm install all of the dependencies.
 
-When a user clicks to give the character a high-five, randomly generate the quality of that high five (1-10).  If the high-five quality => character's high-five skill, the high five is successful. Otherwise, it is a miss!
+```
+$ npm install
+```
 
-If a highfive is successful, update the highfive count.
+4. Run npm start to get the application up and running!
 
-![](http://i.giphy.com/TEFplLVRDMWBi.gif)
+```
+$ npm start
+```
 
-To allow for more flexibility for POSSIBLE future changes put the successful high-five count and the random number generator a service.
+5. Go to the port specificed in the terminal and give each of the animals a high five!
 
+## Deployment
 
-# PART 2: Don't work on this until we've introduced Angular Routing
-Using ng-router, give your app 2 more views with 2 more fictional characters.
+This application is deployed on heroku at [Angular-High-Fives](https://angular-high-fives.herokuapp.com/).
 
-One character that is very good at high-fives: randomly generate their skill level between 6 and 10.
-One character that is decent with high-fives: randomly generate their skill level between 4 and 10.
+## Built With
 
-You will need to find a way to share the total number of high fives across your controllers.
-For example: "I've successfully made 4 of the 11 successful high fives!"
+* Express
+* Angular
+* Node
 
-You'll be using Angular Routes to make a separate view for 3 different fictional characters of your choice. Your page should have a static header and footer of some kind, and 3 navigation buttons to swap out the content of the characters.
+## Authors
 
-## Hard Mode
-Use ng-show, ng-hide, ng-if, or ng-animate to add some creative, dynamic elements to your views when users click on things.
+* **Alayna Buysse** - [AlaynaGrace](https://github.com/AlaynaGrace)
 
-## Pro Mode
-Make the whole experience responsive with the Bootstrap.
+## Acknowledgments
+
+* Thank you to the Prime staff for providing instructions on how to get started building this application!
